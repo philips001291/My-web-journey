@@ -1,0 +1,69 @@
+/* ==== Opšti stil stranice ==== */
+html,
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #f6f8fa;
+  color: #111;
+}
+
+/* ==== Layout sekcije ==== */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* ==== Dugmad ==== */
+.btn {
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #3b82f6;
+  background: linear-gradient(180deg, #6ca0ff, #3b82f6);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* Hover efekat (nije obavezno, ali izgleda profesionalno) */
+.btn:hover {
+  background: linear-gradient(180deg, #7db3ff, #4c8fff);
+}
+
+/* ==== Status poruke ==== */
+.status {
+  min-height: 1.25rem;
+  color: #6b7280;
+}
+
+/* ==== Rezultati ==== */
+.result {
+  margin-top: 1rem;
+}
+
+/* ==== Monospace tekst (za IP i informacije) ==== */
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  white-space: pre-wrap; /* omogućava prikaz novih redova (\n) */
+}
+
+/* ==== Opcionalno: debug stil ako nešto preklapa dugme ==== */
+.btn {
+  outline: 0;
+}
